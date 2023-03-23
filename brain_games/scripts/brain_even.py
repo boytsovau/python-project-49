@@ -13,7 +13,7 @@ def main():
         number = random.randint(1, 100)
         print(f'Question: {number}')
         answer = prompt.string("Your answer: ")
-        if (answer == "yes" and number % 2 == 0) or (answer == "no" and number % 2 != 0):
+        if (answer == "yes" and not number % 2) or (answer == "no" and number % 2):
             print("Correct!")
             count += 1
         elif answer == "no" and number % 2 == 0:
