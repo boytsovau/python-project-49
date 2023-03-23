@@ -3,3 +3,6 @@
 
 
 <a href="https://codeclimate.com/github/boytsovau/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/1b5c5089f32a03734b29/maintainability" /></a>
+
+
+Запись задания номер 5 <a href="https://asciinema.org/a/569505">
