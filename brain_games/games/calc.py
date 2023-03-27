@@ -11,12 +11,13 @@ def question():
 
 
 def result(operator, num_1, num_2):
-    if operator == '+':
-        result = num_1 + num_2
-    elif operator == '-':
-        result = num_1 - num_2
-    else:
-        result = num_1 * num_2
+    match operator:
+        case '+':
+            result = num_1 + num_2
+        case '-':
+            result = num_1 - num_2
+        case '*':
+            result = num_1 * num_2
     return result
 
 
