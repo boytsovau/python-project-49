@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 import prompt
 from brain_games.games.calc import question,compare,result
+from brain_games.welcome import welcome
 
 
 def main():
-    print("Welcome to the Brain Games!")
-    name = prompt.string("May I have your name? ")
-    print(f'Hello, {name}!')
+    name = welcome()
     print("What is the result of the expression?")
     count = 0
     while count < 3:
