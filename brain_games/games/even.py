@@ -7,11 +7,9 @@ def question():
     print(f'Question: {number}')
     return number
 
+
 def result(number):
     if not number % 2:
         return 'yes'
     else:
         return 'no'
-
-
-

@@ -15,11 +15,8 @@ def main():
         if answer == user_answer:
             print("Correct!")
             count += 1
-        elif answer != user_answer:
-            print(f'\'{user_answer}\' is wrong answer ;(. Correct answer was \'{answer}\'.')
-            break
         else:
-            print("Is wrong answer ;(.")
+            print(f'\'{user_answer}\' is wrong answer ;(. Correct answer was \'{answer}\'.')
             break
     if count == 3:
         print(f'Congratulations, {name}')
