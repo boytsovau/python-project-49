@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-import random
 import prompt
 from brain_games.welcome import welcome
+from brain_games.games.even import question, result
 
 
 def main():
@@ -9,17 +9,14 @@ def main():
     print("Answer \"yes\" if the number is even, otherwise answer \"no\".")
     count = 0
     while count < 3:
-        number = random.randint(1, 100)
-        print(f'Question: {number}')
-        answer = prompt.string("Your answer: ")
-        if (answer == "yes" and not number % 2) or (answer == "no" and number % 2):
+        number = question()
+        user_answer = prompt.string("Your answer: ")
+        answer = result(number)
+        if answer == user_answer:
             print("Correct!")
             count += 1
-        elif (answer == "no" and not number % 2):
-            print("'no' is wrong answer ;(. Correct answer was 'yes'.")
-            break
-        elif (answer == "yes" and number % 2):
-            print("'yes' is wrong answer ;(. Correct answer was 'no'.")
+        elif answer != user_answer:
+            print(f'\'{user_answer}\' is wrong answer ;(. Correct answer was \'{answer}\'.')
             break
         else:
             print("Is wrong answer ;(.")
