@@ -18,7 +18,7 @@ def main():
                 print(f'Let\'s try again, {name}!')
                 break
             else:
-                print(answer)
+                print('Correct!')
         except ValueError:
             print("It is allowed to enter only numbers, start again")
             break
