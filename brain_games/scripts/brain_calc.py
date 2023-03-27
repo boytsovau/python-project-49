@@ -10,14 +10,18 @@ def main():
     count = 0
     while count < 3:
         operator, num_1, num_2 = question()
-        user_answer = int(prompt.string("Your answer: "))
+        user_answer = prompt.string("Your answer: ")
         answer = result(operator, num_1, num_2)
-        if answer != user_answer:
-            print(f'\'{user_answer}\' is wrong answer ;(. Correct answer was \'{answer}\'.')
-            print(f'Let\'s try again, {name}!')
+        try:
+            if answer != int(user_answer):
+                print(f'\'{user_answer}\' is wrong answer ;(. Correct answer was \'{answer}\'.')
+                print(f'Let\'s try again, {name}!')
+                break
+            else:
+                print(answer)
+        except ValueError:
+            print("It is allowed to enter only numbers, start again")
             break
-        else:
-            print(answer)
         count += 1
     if count == 3:
         print(f'Congratulations, {name}')
