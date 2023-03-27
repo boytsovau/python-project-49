@@ -7,7 +7,7 @@ def question():
     num_1 = random.randint(1, 40)
     num_2 = random.randint(1, 40)
     print(f'Question: {num_1} {operator} {num_2}')
-    return operator,
+    return operator, num_1, num_2
 
 def result(operator,num_1, num_2):
         if operator == '+':
@@ -18,13 +18,8 @@ def result(operator,num_1, num_2):
             result = num_1 * num_2
         return result
 
-def compare(user_answer):
-    if int(user_answer) == result():
+def compare(user_answer,operator,num_1, num_2):
+    if int(user_answer) == result(operator,num_1, num_2):
         return 'Correct!'
     else:
-        return f'\'{user_answer}\' is wrong answer ;(. Correct answer was \'{result(operator,num_1, num_2)}\'.'
-    
-if __name__ == '__main__':
-    question()
-    result()
-    compare()
+        return False
