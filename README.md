@@ -6,3 +6,5 @@
 
 
 Запись задания номер 5 https://asciinema.org/a/569505
+
+Запись задания номер 6 https://asciinema.org/a/570972
