@@ -22,7 +22,11 @@ def result(operator, num_1, num_2):
 
 
 def compare(user_answer, operator, num_1, num_2):
-    if int(user_answer) == result(operator, num_1, num_2):
-        return 'Correct!'
-    else:
+    try:
+        if int(user_answer) == result(operator, num_1, num_2):
+            return 'Correct!'
+        else:
+            return False
+    except ValueError:
         return False
+        
