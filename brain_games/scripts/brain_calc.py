@@ -24,6 +24,7 @@ def main():
               print('Correct!')
         else:
               print(f'\'{answer}\' is wrong answer ;(. Correct answer was \'{result}\'.')
+              print(f'Let\'s try again, {name}!')
               break
         count += 1
     if count == 3:
