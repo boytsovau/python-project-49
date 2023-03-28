@@ -1,9 +1,15 @@
 #!/usr/bin/env python3
+import random
 
 
 def question():
-    operator = random.choice(['+', '-', '*'])
-    num_1 = random.randint(1, 40)
-    num_2 = random.randint(1, 40)
-    print(f'Question: {num_1} {operator} {num_2}')
-    return operator, num_1, num_2
+    num1 = random.randint(1, 40)
+    num2 = random.randint(1, 40)
+    print(f'Question: {num1} {num2}')
+    return  num1, num2
+
+
+def result(num1, num2):
+    while num2 != 0:
+        num1, num2 = num2, num1 % num2
+    return num1
