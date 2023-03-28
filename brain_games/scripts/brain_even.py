@@ -10,8 +10,7 @@ def main():
     print("Answer \"yes\" if the number is even, otherwise answer \"no\".")
     count = 0
     while count < 3:
-        number = question()
-        user_answer = prompt.string("Your answer: ")
+        number, user_answer = question()
         answer = result(number)
         if check_answer(answer, user_answer, name) is True:
             count += 1
