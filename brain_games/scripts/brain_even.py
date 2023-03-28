@@ -2,6 +2,7 @@
 import prompt
 from brain_games.welcome import welcome
 from brain_games.games.even import question, result
+from brain_games.games.check import check_answer
 
 
 def main():
@@ -12,11 +13,9 @@ def main():
         number = question()
         user_answer = prompt.string("Your answer: ")
         answer = result(number)
-        if answer == user_answer:
-            print("Correct!")
+        if check_answer(answer, user_answer, name) is True:
             count += 1
         else:
-            print(f'\'{user_answer}\' is wrong answer ;(. Correct answer was \'{answer}\'.')
             break
     if count == 3:
         print(f'Congratulations, {name}')
