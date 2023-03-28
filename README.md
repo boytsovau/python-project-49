@@ -10,3 +10,5 @@
 Запись задания номер 6 https://asciinema.org/a/570972
 
 Запись задания номер 7 https://asciinema.org/a/571214
+
+Запись задания номер 8 https://asciinema.org/a/571261
