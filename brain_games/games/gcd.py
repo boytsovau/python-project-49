@@ -3,13 +3,13 @@ import random
 
 
 def question():
-    num1 = random.randint(1, 40)
-    num2 = random.randint(1, 40)
-    print(f'Question: {num1} {num2}')
-    return num1, num2
+    num_1 = random.randint(1, 40)
+    num_2 = random.randint(1, 40)
+    print(f'Question: {num_1} {num_2}')
+    return num_1, num_2
 
 
-def result(num1, num2):
-    while num2 != 0:
-        num1, num2 = num2, num1 % num2
-    return num1
+def result(num_1, num_2):
+    while num_2 != 0:
+        num_1, num_2 = num_2, num_1 % num_2
+    return num_1

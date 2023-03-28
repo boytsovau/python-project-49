@@ -10,8 +10,8 @@ def main():
     print("Find the greatest common divisor of given numbers.")
     count = 0
     while count < 3:
-        num1, num2 = question()
-        answer = result(num1, num2)
+        num_1, num_2 = question()
+        answer = result(num_1, num_2)
         try:
             user_answer = int(prompt.string("Your answer: "))
             if check_answer(answer, user_answer, name) is True:
