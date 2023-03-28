@@ -14,3 +14,6 @@ def question():
     progression = ' '.join(map(str, progression))
     print(f'Question: {progression}')
     return missing
+
+if __name__ == '__main__':
+    question()
