@@ -21,7 +21,7 @@ def main():
             print("It is allowed to enter only numbers, start again")
             break
     if count == 3:
-        print(f'Congratulations, {name}')
+        print(f'Congratulations, {name}!')
 
 
 if __name__ == '__main__':
