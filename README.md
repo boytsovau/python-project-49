@@ -1,6 +1,7 @@
 # Brain games
 
-    Brain Games is a set of five console games built on the principle of popular mobile applications for brain pumping.
+    Brain Games is a set of five console games built on the principle 
+    of popular mobile applications for brain pumping.
 
 1. [Install](#install)
 2. [Games](#games)
