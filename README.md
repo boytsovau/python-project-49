@@ -10,7 +10,7 @@ Brain Games is a set of five console games built on the principle of popular mob
     + [GCD](#task7)
     + [Progression](#task8)
     + [Prime](#task9)
-4. [Результаты тестов](#result)
+4. [Test result](#result)
 
 
 # <a name="install"> Install
