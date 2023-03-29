@@ -3,12 +3,12 @@ name = "hexlet-code"
 version = "0.5.0"
 description = ""
 authors = ["boytsovau <alexbonch@gmail.com>"]
-reposutory = "https://github.com/boytsovau/python-project-49.git"
+repository = "https://github.com/boytsovau/python-project-49.git"
 readme = "README.md"
 packages = [{include = "brain_games"}]
 
 classifiers = [
-    Topic :: Games/Entertainment :: Puzzle Games
+    "Topic :: Games/Entertainment :: Puzzle Games"
 ]
 
 [tool.poetry.dependencies]
