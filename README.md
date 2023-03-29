@@ -4,16 +4,18 @@ Brain Games is a set of five console games built on the principle of popular mob
 
 1. [Install](#install)
 2. [Games](#games)
-3. [Примеры работы игр](#exmaple)
-    + [Проверка на чётность](#task5)
-    + [Калькулятор](#task6)
-    + [НОД](#task7)
-    + [Арифметическая прогрессия](#task8)
-    + [Простое ли число?](#task9)
+3. [Game example](#exmaple)
+    + [Even](#task5)
+    + [Calculator](#task6)
+    + [GCD](#task7)
+    + [Progression](#task8)
+    + [Prime](#task9)
 4. [Результаты тестов](#result)
 
 
 # <a name="install"> Install
+
+    pip install --user git+https://github.com/boytsovau/python-project-49.git
 
 # <a name="games"> Games
 
@@ -25,31 +27,31 @@ Brain Games is a set of five console games built on the principle of popular mob
 |GCD|Determination of the greatest common divisor.|brain-gcd|
 |Prime|Definition of a prime number.|brain-prime|
 
+    To win, you need to give three correct answers in a row.
 
+# <a name="example"> Game example
 
-# <a name="example"> Примеры работы игр
-
-#### <a name="task5"></a> Проверка на чётность
+#### <a name="task5"></a> Even
 [![asciicast](https://asciinema.org/a/569505.svg)](https://asciinema.org/a/569505)
 
 --------------------------  
-#### <a name="task6"></a> Калькулятор
+#### <a name="task6"></a> Calculator
 [![asciicast](https://asciinema.org/a/570972.svg)](https://asciinema.org/a/570972)
 
 --------------------------  
-#### <a name="task7"></a> НОД
+#### <a name="task7"></a> GCD
 [![asciicast](https://asciinema.org/a/571214.svg)](https://asciinema.org/a/571214)
 
 --------------------------  
-#### <a name="task8"></a> Арифметическая прогрессия
+#### <a name="task8"></a> Progression
 [![asciicast](https://asciinema.org/a/571261.svg)](https://asciinema.org/a/571261)
 
 --------------------------  
-### <a name="task9"></a> Простое ли число?
+### <a name="task9"></a> Prime
 [![asciicast](https://asciinema.org/a/571349.svg)](https://asciinema.org/a/571349)
 
 
-# <a name="result"></a> Результаты тестов 
+# <a name="result"></a> Test result
 
 [![Actions Status](https://github.com/boytsovau/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/boytsovau/python-project-49/actions)
 
