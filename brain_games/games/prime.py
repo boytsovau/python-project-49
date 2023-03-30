@@ -10,7 +10,7 @@ def question():
 
 def result(question):
     number = question()
-    for i in range(2, number):
+    for i in range(1, number):
         if number % i != 0 and number % 1 == 0:
             i += 1
         else:
