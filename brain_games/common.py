@@ -1,4 +1,12 @@
 #!/usr/bin/env python3
+import prompt
+
+
+def welcome():
+    print("Welcome to the Brain Games!")
+    name = prompt.string("May I have your name? ")
+    print(f'Hello, {name}!')
+    return name
 
 
 def check_answer(answer, user_answer, name):
@@ -10,3 +18,8 @@ def check_answer(answer, user_answer, name):
     else:
         print('Correct!')
         return True
+
+
+if __name__ == '__main__':
+    welcome()
+    check_answer()

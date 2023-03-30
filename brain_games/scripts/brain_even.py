@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-from brain_games.welcome import welcome
+from brain_games.common import welcome, check_answer
 from brain_games.games.even import question, result
-from brain_games.games.check import check_answer
 
 
 def main():
