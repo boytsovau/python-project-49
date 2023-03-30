@@ -10,9 +10,9 @@ def welcome():
 
 
 def check_answer(answer, user_answer, name):
-    if answer != user_answer:
-        print(f"{user_answer}' is wrong answer ;(."
-              f"Correct answer was'{answer}'.")
+    if str(answer) != str(user_answer):
+        print(f"'{user_answer}' is wrong answer ;(."
+              f"Correct answer was' {answer}'.")
         print(f'Let\'s try again, {name}!')
         return False
     else:
@@ -23,8 +23,8 @@ def check_answer(answer, user_answer, name):
 def game_count(question, result, name):
     count = 0
     while count < 3:
-        number, user_answer = question()
-        answer = result(number)
+        answer = result(question)
+        user_answer = prompt.string("Your answer: ")
         if check_answer(answer, user_answer, name) is True:
             count += 1
         else:
@@ -35,5 +35,3 @@ def game_count(question, result, name):
 
 if __name__ == '__main__':
     welcome()
-    check_answer()
-    game_count()

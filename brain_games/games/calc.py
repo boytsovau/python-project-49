@@ -10,7 +10,8 @@ def question():
     return operator, num_1, num_2
 
 
-def result(operator, num_1, num_2):
+def result(question):
+    operator, num_1, num_2 = question()
     match operator:
         case '+':
             result = num_1 + num_2
@@ -19,3 +20,8 @@ def result(operator, num_1, num_2):
         case '*':
             result = num_1 * num_2
     return result
+
+
+if __name__ == '__main__':
+    question()
+    result()

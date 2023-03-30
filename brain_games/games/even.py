@@ -1,17 +1,21 @@
 #!/usr/bin/env python3
 import random
-import prompt
 
 
 def question():
     number = random.randint(1, 100)
     print(f'Question: {number}')
-    user_answer = prompt.string("Your answer: ")
-    return number, user_answer
+    return number
 
 
-def result(number):
+def result(question):
+    number = question()
     if not number % 2:
         return 'yes'
     else:
         return 'no'
+
+
+if __name__ == '__main__':
+    question()
+    result()
