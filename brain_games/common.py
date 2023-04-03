@@ -20,10 +20,13 @@ def check_answer(answer, user_answer, name):
         return True
 
 
-def game_count(question, result, name):
+def game_count(question, result, welcome, rule):
+    name = welcome()
+    print(rule())
     count = 0
     while count < 3:
-        answer = result(question)
+        game_question = question()
+        answer = result(game_question)
         user_answer = prompt.string("Your answer: ")
         if check_answer(answer, user_answer, name) is True:
             count += 1

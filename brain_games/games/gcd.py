@@ -2,6 +2,10 @@
 import random
 
 
+def rule():
+    return "Find the greatest common divisor of given numbers."
+
+
 def question():
     num_1 = random.randint(1, 40)
     num_2 = random.randint(1, 40)

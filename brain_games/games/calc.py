@@ -2,6 +2,10 @@
 import random
 
 
+def rule():
+    return "What is the result of the expression?"
+
+
 def question():
     operator = random.choice(['+', '-', '*'])
     num_1 = random.randint(1, 40)
@@ -11,7 +15,7 @@ def question():
 
 
 def result(question):
-    operator, num_1, num_2 = question()
+    operator, num_1, num_2 = question
     match operator:
         case '+':
             result = num_1 + num_2

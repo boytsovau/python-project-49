@@ -2,6 +2,10 @@
 import random
 
 
+def rule():
+    return "What number is missing in the progression?"
+
+
 def question():
     start = random.randint(1, 50)
     step = random.randint(1, 10)
