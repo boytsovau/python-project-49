@@ -8,18 +8,12 @@ def rule():
 
 def question():
     number = random.randint(1, 100)
-    print(f'Question: {number}')
-    return number
-
-
-def result(question):
-    number = question()
+    game_question = f'Question: {number}'
     if not number % 2:
-        return 'yes'
+        return game_question, 'yes'
     else:
-        return 'no'
+        return game_question, 'no'
 
 
 if __name__ == '__main__':
     question()
-    result()

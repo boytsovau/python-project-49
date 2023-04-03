@@ -8,22 +8,17 @@ def rule():
 
 def question():
     number = random.randint(1, 100)
-    print(f'Question: {number}')
-    return number
-
-
-def result(question):
-    number = question()
-    for i in range(2, number):
-        if number == 1:
-            return 'Yes'
-        elif number % i != 0 and number % 1 == 0:
-            i += 1
-        else:
-            return 'no'
-    return 'yes'
+    game_question = f'Question: {number}'
+    if number == 1:
+        return game_question, 'no'
+    elif number == 2:
+        return game_question, 'yes'
+    else:
+        for i in range(2, number):
+            if number % i == 0:
+                return game_question, 'no'
+        return game_question, 'yes'
 
 
 if __name__ == '__main__':
     question()
-    result()

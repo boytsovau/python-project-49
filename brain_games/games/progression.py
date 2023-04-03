@@ -15,16 +15,11 @@ def question():
     index = random.randint(0, len(progression) - 1)
     progression[index] = '..'
     progression = ' '.join(map(str, progression))
-    print(f'Question: {progression}')
-    return start, index, step
-
-
-def result(question):
     start, index, step = question()
     missing = start + index * step
-    return missing
+    game_question = f'Question: {progression}'
+    return game_question, missing
 
 
 if __name__ == '__main__':
     question()
-    result()
