@@ -18,7 +18,3 @@ def question():
             if number % i == 0:
                 return game_question, 'no'
         return game_question, 'yes'
-
-
-if __name__ == '__main__':
-    question()

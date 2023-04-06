@@ -19,7 +19,3 @@ def question():
         case '*':
             result = num_1 * num_2
     return game_question, result
-
-
-if __name__ == '__main__':
-    question()

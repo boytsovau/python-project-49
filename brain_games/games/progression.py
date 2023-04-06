@@ -18,7 +18,3 @@ def question():
     missing = start + index * step
     game_question = f'Question: {progression}'
     return game_question, missing
-
-
-if __name__ == '__main__':
-    question()

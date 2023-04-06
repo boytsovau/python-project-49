@@ -13,7 +13,3 @@ def question():
         return game_question, 'yes'
     else:
         return game_question, 'no'
-
-
-if __name__ == '__main__':
-    question()
