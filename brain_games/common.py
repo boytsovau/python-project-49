@@ -20,9 +20,9 @@ def check_answer(answer, user_answer, name):
         return True
 
 
-def game_count(question, welcome, rule):
+def game(question, welcome, rule):
     name = welcome()
-    print(rule())
+    print(rule)
     count = 0
     while count < 3:
         game_question, answer = question()
@@ -34,7 +34,3 @@ def game_count(question, welcome, rule):
             break
     if count == 3:
         print(f'Congratulations, {name}!')
-
-
-if __name__ == '__main__':
-    welcome()

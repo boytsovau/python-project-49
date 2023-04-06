@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 from brain_games.common import welcome, game_count
-from brain_games.games.progression import question, rule
+from brain_games.games.progression import question, RULE
 
 
 def main():
-    game_count(question, welcome, rule)
+    game_count(question, welcome, RULE)
 
 
 if __name__ == '__main__':

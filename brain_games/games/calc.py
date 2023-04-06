@@ -2,8 +2,7 @@
 import random
 
 
-def rule():
-    return "What is the result of the expression?"
+RULE = "What is the result of the expression?"
 
 
 def question():

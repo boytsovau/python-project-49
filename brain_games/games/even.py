@@ -2,8 +2,7 @@
 import random
 
 
-def rule():
-    return "Answer \"yes\" if the number is even, otherwise answer \"no\"."
+RULE = "Answer \"yes\" if the number is even, otherwise answer \"no\"."
 
 
 def question():
