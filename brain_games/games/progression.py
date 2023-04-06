@@ -5,7 +5,7 @@ import random
 RULE = "What number is missing in the progression?"
 
 
-def question():
+def get_question():
     start = random.randint(1, 50)
     step = random.randint(1, 10)
     progression = [start]

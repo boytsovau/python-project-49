@@ -5,7 +5,7 @@ import random
 RULE = "Answer \"yes\" if given number is prime. Otherwise answer \"no\"."
 
 
-def question():
+def get_question():
     number = random.randint(1, 100)
     game_question = f'Question: {number}'
     if number == 1:

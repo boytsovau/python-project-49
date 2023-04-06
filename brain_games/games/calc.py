@@ -5,7 +5,7 @@ import random
 RULE = "What is the result of the expression?"
 
 
-def question():
+def get_question():
     operator = random.choice(['+', '-', '*'])
     num_1 = random.randint(1, 40)
     num_2 = random.randint(1, 40)
