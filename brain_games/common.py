@@ -9,8 +9,8 @@ def game_engine(game):
     print(game.RULE)
     count = 0
     while count < 3:
-        game_question, answer = game.question()
-        print(game_question)
+        question, answer = game.question()
+        print(question)
         user_answer = prompt.string("Your answer: ")
         if str(answer) != str(user_answer):
             print(f"'{user_answer}' is wrong answer ;(."
