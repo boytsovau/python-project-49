@@ -5,7 +5,7 @@ import random
 RULE = "Answer \"yes\" if the number is even, otherwise answer \"no\"."
 
 
-def get_question():
+def get_q_and_a():
     number = random.randint(1, 100)
     game_question = f'Question: {number}'
     if not number % 2:

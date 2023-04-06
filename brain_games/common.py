@@ -9,7 +9,7 @@ def game_engine(game):
     print(game.RULE)
     count = 0
     while count < 3:
-        question, answer = game.get_question()
+        question, answer = game.get_q_and_a()
         print(question)
         user_answer = prompt.string("Your answer: ")
         if str(answer) != str(user_answer):
