@@ -2,14 +2,14 @@
 import prompt
 
 
-def game(question, rule):
+def game_engine(game):
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")
     print(f'Hello, {name}!')
-    print(rule)
+    print(game.RULE)
     count = 0
     while count < 3:
-        game_question, answer = question()
+        game_question, answer = game.question()
         print(game_question)
         user_answer = prompt.string("Your answer: ")
         if str(answer) != str(user_answer):
