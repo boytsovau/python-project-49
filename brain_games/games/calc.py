@@ -5,7 +5,7 @@ import random
 RULE = "What is the result of the expression?"
 
 
-def get_q_and_a():
+def get_question_and_answer():
     operator = random.choice(['+', '-', '*'])
     num_1 = random.randint(1, 40)
     num_2 = random.randint(1, 40)
@@ -17,4 +17,4 @@ def get_q_and_a():
             result = num_1 - num_2
         case '*':
             result = num_1 * num_2
-    return game_question, result
+    return game_question, str(result)
