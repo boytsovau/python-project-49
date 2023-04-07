@@ -12,8 +12,8 @@ def get_question_and_answer():
     for i in range(1, 10):
         progression.append(start + i * step)
     random_index = random.randint(0, len(progression) - 1)
+    missing = progression[random_index]
     progression[random_index] = '..'
     progression = ' '.join(map(str, progression))
-    missing = start + random_index * step
     game_question = f'Question: {progression}'
     return game_question, str(missing)
