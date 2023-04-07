@@ -7,8 +7,8 @@ RULE = "Answer \"yes\" if given number is prime. Otherwise answer \"no\"."
 def get_question_and_answer():
     random_number = random.randint(1, 100)
     game_question = f'Question: {random_number}'
-    answer = 'yes' if is_prime(random_number) else 'no'
-    return game_question, answer
+    correct_answer = 'yes' if is_prime(random_number) else 'no'
+    return game_question, correct_answer
 
 
 def is_prime(random_number) -> bool:
