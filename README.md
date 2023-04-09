@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/boytsovau/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/boytsovau/python-project-49/actions) <a href="https://codeclimate.com/github/boytsovau/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/1b5c5089f32a03734b29/maintainability" /></a>
+
 # Brain games
 
 Brain Games is a set of five console games built on the principle of popular mobile applications for brain pumping.
@@ -10,7 +12,6 @@ Brain Games is a set of five console games built on the principle of popular mob
     + [GCD](#task7)
     + [Progression](#task8)
     + [Prime](#task9)
-4. [Test result](#result)
 
 
 # <a name="install"> Install
@@ -49,10 +50,3 @@ Brain Games is a set of five console games built on the principle of popular mob
 --------------------------  
 ### <a name="task9"></a> Prime
 [![asciicast](https://asciinema.org/a/571349.svg)](https://asciinema.org/a/571349)
-
-
-# <a name="result"></a> Test result
-
-[![Actions Status](https://github.com/boytsovau/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/boytsovau/python-project-49/actions)
-
-<a href="https://codeclimate.com/github/boytsovau/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/1b5c5089f32a03734b29/maintainability" /></a>

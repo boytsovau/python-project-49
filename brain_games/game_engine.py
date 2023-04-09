@@ -1,7 +1,7 @@
 import prompt
 
 
-ROUND = 3
+ROUNDS_COUNT = 3
 
 
 def run(game):
@@ -9,7 +9,7 @@ def run(game):
     name = prompt.string("May I have your name? ")
     print(f'Hello, {name}!')
     print(game.RULE)
-    for _ in range(ROUND):
+    for _ in range(ROUNDS_COUNT):
         question, correct_answer = game.get_question_and_answer()
         print(question)
         user_answer = prompt.string("Your answer: ")
@@ -20,6 +20,5 @@ def run(game):
             break
         else:
             print('Correct!')
-            _ += 1
     else:
         print(f'Congratulations, {name}!')
