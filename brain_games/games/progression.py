@@ -14,5 +14,4 @@ def get_question_and_answer():
     missing_number = progression[random_index]
     progression[random_index] = '..'
     progression = ' '.join(map(str, progression))
-    game_question = f'Question: {progression}'
-    return game_question, str(missing_number)
+    return f'Question: {progression}', str(missing_number)

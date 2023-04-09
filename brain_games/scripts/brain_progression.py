@@ -1,10 +1,6 @@
-from brain_games.common import run_game
+from brain_games.common import run
 import brain_games.games.progression as progression
 
 
 def main():
-    run_game(progression)
-
-
-if __name__ == '__main__':
-    main()
+    run(progression)
