@@ -8,10 +8,10 @@ def get_question_and_answer():
     num_1 = random.randint(1, 40)
     num_2 = random.randint(1, 40)
     gcd = get_gcd(num_1, num_2)
-    return f'Question: {num_1} {num_2}', gcd
+    return f'{num_1} {num_2}', str(gcd)
 
 
 def get_gcd(a, b):
     while b != 0:
         a, b = b, a % b
-    return str(a)
+    return a

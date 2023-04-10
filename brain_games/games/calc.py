@@ -15,4 +15,4 @@ def get_question_and_answer():
             result = num_1 - num_2
         case '*':
             result = num_1 * num_2
-    return f'Question: {num_1} {operator} {num_2}', str(result)
+    return f'{num_1} {operator} {num_2}', str(result)
